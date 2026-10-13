@@ -77,3 +77,6 @@ See `docs/AZURE_GUIDE.md`.
 This is a capstone, not a production fraud system. The balance columns are recorded after the
 transaction and fraud rows almost always empty the sender's account, so metrics can look
 unrealistically high. See `docs/REPORT_TEMPLATE.md`.
+
+#FastAPI capstone deployment
+

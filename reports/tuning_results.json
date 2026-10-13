@@ -1,0 +1,12 @@
+{
+  "random_forest": {
+    "best_params": {
+      "min_samples_leaf": 10,
+      "max_depth": 10
+    },
+    "cv_average_precision": 0.9947438407731499,
+    "imbalance_strategy": "class_weight",
+    "train_seconds": 2192.2,
+    "test_cutoff_step": 355
+  }
+}

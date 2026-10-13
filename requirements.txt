@@ -1,0 +1,28 @@
+# Data and ML
+numpy>=2.1
+pandas
+scikit-learn
+imbalanced-learn
+matplotlib
+seaborn
+joblib
+
+# API
+fastapi
+uvicorn
+pydantic
+httpx
+
+# Testing and linting
+pytest
+ruff
+
+# Notebooks
+jupyter
+ipykernel
+
+# Pinned exactly as required by the project brief.
+# Not used by the fraud pipeline itself.
+langchain==0.3.27
+langchain-core==0.3.72
+langchain-community==0.3.27

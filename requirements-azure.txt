@@ -1,0 +1,7 @@
+# Install AFTER requirements.txt (Section 3 only):
+#   pip install -r requirements.txt
+#   pip install -r requirements-azure.txt
+mlflow
+azureml-mlflow
+azure-ai-ml
+azure-identity

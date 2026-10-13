@@ -1,0 +1,42 @@
+{
+  "rows_raw": 6362620,
+  "fraud_raw": 8213,
+  "missing_values_total": 0,
+  "duplicate_rows_removed": 0,
+  "negative_money_rows_removed": 0,
+  "zero_amount_rows_kept": 16,
+  "zero_amount_rows_that_are_fraud": 16,
+  "outliers": {
+    "amount": {
+      "rows_above_3xIQR_fence": 174085,
+      "fraud_rate_in_those_rows": 0.01789,
+      "decision": "kept; handled with a signed log transform instead of removal"
+    },
+    "oldbalanceOrg": {
+      "rows_above_3xIQR_fence": 929807,
+      "fraud_rate_in_those_rows": 0.00446,
+      "decision": "kept; handled with a signed log transform instead of removal"
+    },
+    "newbalanceOrig": {
+      "rows_above_3xIQR_fence": 864681,
+      "fraud_rate_in_those_rows": 0.00017,
+      "decision": "kept; handled with a signed log transform instead of removal"
+    },
+    "oldbalanceDest": {
+      "rows_above_3xIQR_fence": 474998,
+      "fraud_rate_in_those_rows": 0.00059,
+      "decision": "kept; handled with a signed log transform instead of removal"
+    },
+    "newbalanceDest": {
+      "rows_above_3xIQR_fence": 425660,
+      "fraud_rate_in_those_rows": 0.00171,
+      "decision": "kept; handled with a signed log transform instead of removal"
+    }
+  },
+  "columns_dropped": {
+    "nameOrig, nameDest": "account identifiers: almost every value is unique, so they cannot generalise to new accounts",
+    "isFlaggedFraud": "output of the system's own rule (only 16 rows are 1), not an input that exists before scoring"
+  },
+  "rows_clean": 6362620,
+  "fraud_clean": 8213
+}

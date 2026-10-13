@@ -1,0 +1,27 @@
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.env
+config.json
+
+# Data (493 MB, above GitHub's 100 MB file limit) and generated data
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Trained models (too large for Git) - the metadata JSON files ARE committed
+models/*.pkl
+models/candidates/*
+!models/candidates/.gitkeep
+
+# MLflow / Azure build output
+mlruns/
+build/
